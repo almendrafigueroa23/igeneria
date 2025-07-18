@@ -24,18 +24,19 @@
   .nivel {
     border-radius: 12px;
     padding: 10px;
-    background-color: #f8e1eb;
+    background-color: #fce4ec; /* rosa pastel claro */
   }
-  .nivel:nth-child(3n) { background-color: #edd6ef; }
-  .nivel:nth-child(3n+1) { background-color: #e0f3f7; }
-  .nivel:nth-child(3n+2) { background-color: #f4d6e4; }
+  .nivel:nth-child(4n) { background-color: #f3e5f5; } /* morado pastel claro */
+  .nivel:nth-child(4n+1) { background-color: #f8bbd0; } /* rosa pastel medio */
+  .nivel:nth-child(4n+2) { background-color: #e1bee7; } /* morado pastel medio */
+  .nivel:nth-child(4n+3) { background-color: #f48fb1; } /* rosa pastel un poco más intenso */
   .nivel h2 {
     text-align: center;
-    color: #a074af;
+    color: #8e24aa; /* morado más oscuro */
     margin-bottom: 10px;
   }
   .materia {
-    background-color: rgba(255,255,255,0.85);
+    background-color: rgba(255,255,255,0.9);
     border: 1px solid #d2c4d7;
     border-radius: 8px;
     padding: 6px 10px;
@@ -45,11 +46,11 @@
     font-size: 0.95em;
   }
   .materia:hover {
-    background-color: #f4d6e4;
+    background-color: #f8bbd0; /* rosa pastel medio */
   }
   .materia.completada {
     text-decoration: line-through;
-    background-color: #cbead9 !important;
+    background-color: #d1c4e9 !important; /* morado pastel suave para aprobadas */
     color: #666;
   }
   .materia.bloqueada {
@@ -63,6 +64,7 @@
 <h1>Malla Curricular Interactiva</h1>
 
 <div class="grid">
+  <!-- Aquí comienzan los niveles; igual que antes, pero ahora con colores pastel rosa y morado -->
   <div class="nivel">
     <h2>Nivel 100</h2>
     <div class="materia" id="matlogica">Matemática y Pensamiento Lógico</div>
@@ -72,7 +74,6 @@
     <div class="materia" id="herradig">Herramientas Digitales para la Gestión</div>
     <div class="materia" id="cursofg1">Curso de Formación General</div>
   </div>
-
   <div class="nivel">
     <h2>Nivel 200</h2>
     <div class="materia bloqueada" id="matneg1" data-req="matlogica">Matemáticas para los Negocios I</div>
@@ -82,7 +83,6 @@
     <div class="materia bloqueada" id="herravanz" data-req="herradig">Herramientas Digitales Avanzadas</div>
     <div class="materia" id="cursofg2">Curso de Formación General</div>
   </div>
-
   <div class="nivel">
     <h2>Nivel 300</h2>
     <div class="materia bloqueada" id="matneg2" data-req="matneg1">Matemáticas para los Negocios II</div>
@@ -92,7 +92,6 @@
     <div class="materia" id="derechocom">Derecho Comercial</div>
     <div class="materia" id="cursofg3">Curso de Formación General</div>
   </div>
-
   <div class="nivel">
     <h2>Nivel 400</h2>
     <div class="materia bloqueada" id="analidatos1" data-req="matneg1">Análisis de Datos I</div>
@@ -102,7 +101,6 @@
     <div class="materia" id="derecholab">Derecho Laboral</div>
     <div class="materia" id="cursofg4">Curso de Formación General</div>
   </div>
-
   <div class="nivel">
     <h2>Nivel 500</h2>
     <div class="materia bloqueada" id="analidatos2" data-req="analidatos1">Análisis de Datos II</div>
@@ -112,7 +110,6 @@
     <div class="materia bloqueada" id="marketing" data-req="funcger">Marketing</div>
     <div class="materia" id="cursofg5">Curso de Formación General</div>
   </div>
-
   <div class="nivel">
     <h2>Nivel 600</h2>
     <div class="materia" id="practicainter">Práctica Intermedia</div>
@@ -121,7 +118,6 @@
     <div class="materia bloqueada" id="investmerc" data-req="marketing,analidatos1">Investigación de Mercado</div>
     <div class="materia" id="cursofg6">Curso de Formación General</div>
   </div>
-
   <div class="nivel">
     <h2>Nivel 700</h2>
     <div class="materia bloqueada" id="financorp" data-req="mercap">Finanzas Corporativas</div>
@@ -131,7 +127,6 @@
     <div class="materia bloqueada" id="marketestr" data-req="marketing">Marketing Estratégico</div>
     <div class="materia" id="derechotrib">Derecho Tributario</div>
   </div>
-
   <div class="nivel">
     <h2>Nivel 800</h2>
     <div class="materia bloqueada" id="emprendimiento" data-req="fundempr">Emprendimiento</div>
@@ -141,7 +136,6 @@
     <div class="materia" id="gestoper">Gestión de Operaciones y Procesos</div>
     <div class="materia" id="gestorgsocial">Gestión de Organizaciones Sociales</div>
   </div>
-
   <div class="nivel">
     <h2>Nivel 900</h2>
     <div class="materia" id="gestestratorg">Gestión Estratégica de Organizaciones</div>
@@ -150,6 +144,9 @@
     <div class="materia" id="eticaorg">Ética en las Organizaciones</div>
     <div class="materia" id="optativo1">Optativo</div>
     <div class="materia" id="optativo2">Optativo</div>
+  </div>
+  <div class="nivel">
+    <h2>Nivel 1000</h2>
     <div class="materia" id="practicaprof">Práctica Profesional</div>
     <div class="materia" id="graduacion">Actividad de Graduación: Juego de Negocios</div>
   </div>
